@@ -15,6 +15,8 @@
 		84D2DE231A10EAFA00810C1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D2DE221A10EAFA00810C1B /* Images.xcassets */; };
 		84D2DE261A10EAFA00810C1B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84D2DE241A10EAFA00810C1B /* LaunchScreen.xib */; };
 		84D2DE321A10EAFB00810C1B /* RACDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE311A10EAFB00810C1B /* RACDemoTests.m */; };
+		84D2DE3C1A10EEBB00810C1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D2DE3B1A10EEBB00810C1B /* MapKit.framework */; };
+		84D2DE3F1A11031100810C1B /* GeoSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE3E1A11031100810C1B /* GeoSearchViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		84D2DE2B1A10EAFB00810C1B /* RACDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RACDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D2DE301A10EAFB00810C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D2DE311A10EAFB00810C1B /* RACDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RACDemoTests.m; sourceTree = "<group>"; };
+		84D2DE3B1A10EEBB00810C1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		84D2DE3D1A11031100810C1B /* GeoSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoSearchViewController.h; sourceTree = "<group>"; };
+		84D2DE3E1A11031100810C1B /* GeoSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoSearchViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D2DE3C1A10EEBB00810C1B /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +72,7 @@
 		84D2DE061A10EAFA00810C1B = {
 			isa = PBXGroup;
 			children = (
+				84D2DE3B1A10EEBB00810C1B /* MapKit.framework */,
 				84D2DE111A10EAFA00810C1B /* RACDemo */,
 				84D2DE2E1A10EAFB00810C1B /* RACDemoTests */,
 				84D2DE101A10EAFA00810C1B /* Products */,
@@ -94,6 +101,8 @@
 				84D2DE221A10EAFA00810C1B /* Images.xcassets */,
 				84D2DE241A10EAFA00810C1B /* LaunchScreen.xib */,
 				84D2DE121A10EAFA00810C1B /* Supporting Files */,
+				84D2DE3D1A11031100810C1B /* GeoSearchViewController.h */,
+				84D2DE3E1A11031100810C1B /* GeoSearchViewController.m */,
 			);
 			path = RACDemo;
 			sourceTree = "<group>";
@@ -228,6 +237,7 @@
 				84D2DE1B1A10EAFA00810C1B /* MasterViewController.m in Sources */,
 				84D2DE151A10EAFA00810C1B /* main.m in Sources */,
 				84D2DE1E1A10EAFA00810C1B /* DetailViewController.m in Sources */,
+				84D2DE3F1A11031100810C1B /* GeoSearchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
