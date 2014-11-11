@@ -7,9 +7,14 @@
 //
 
 #import "DetailViewController.h"
+#import "GeoCodingViewModel.h"
+#import "ReactiveCocoa.h"
+#import <MapKit/MapKit.h>
 
 @interface DetailViewController ()
 
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (nonatomic, strong) GeoCodingViewModel* viewModel;
 @end
 
 @implementation DetailViewController
@@ -36,11 +41,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self configureView];
+    
+    self.viewModel = [GeoCodingViewModel sharedViewModel];
+    
+    [self rac_liftSelector:@selector(setMapWaypoint:) withSignals:RACObserve(self.viewModel, selectedWaypoint), nil];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)setMapWaypoint:(Waypoint*)waypoint {
+    NSLog(@"setWP %@", waypoint);
+    
+    if (waypoint == nil) return;
+    
+    MKPointAnnotation* a = [MKPointAnnotation new];
+    a.coordinate = waypoint.coordinate.coordinate;
+    a.title = waypoint.title;
+    
+    [self.mapView setCenterCoordinate:a.coordinate];
+    [self.mapView addAnnotation:a];
 }
 
 @end

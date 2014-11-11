@@ -10,7 +10,6 @@
 		40A2CC4D624FD040763B2A76 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D32D8795791739425F21357 /* libPods.a */; };
 		84D2DE151A10EAFA00810C1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE141A10EAFA00810C1B /* main.m */; };
 		84D2DE181A10EAFA00810C1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE171A10EAFA00810C1B /* AppDelegate.m */; };
-		84D2DE1B1A10EAFA00810C1B /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE1A1A10EAFA00810C1B /* MasterViewController.m */; };
 		84D2DE1E1A10EAFA00810C1B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE1D1A10EAFA00810C1B /* DetailViewController.m */; };
 		84D2DE211A10EAFA00810C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84D2DE1F1A10EAFA00810C1B /* Main.storyboard */; };
 		84D2DE231A10EAFA00810C1B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84D2DE221A10EAFA00810C1B /* Images.xcassets */; };
@@ -20,6 +19,8 @@
 		84D2DE3F1A11031100810C1B /* GeoSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE3E1A11031100810C1B /* GeoSearchViewController.m */; };
 		84D2DE421A11FA9C00810C1B /* GeoCodingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE411A11FA9C00810C1B /* GeoCodingViewModel.m */; };
 		84D2DE451A12064F00810C1B /* UISearchBar+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE441A12064F00810C1B /* UISearchBar+RAC.m */; };
+		84D2DE481A123E8200810C1B /* Waypoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE471A123E8200810C1B /* Waypoint.m */; };
+		84D2DE4A1A123EA600810C1B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D2DE491A123EA600810C1B /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +42,6 @@
 		84D2DE141A10EAFA00810C1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		84D2DE161A10EAFA00810C1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84D2DE171A10EAFA00810C1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		84D2DE191A10EAFA00810C1B /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		84D2DE1A1A10EAFA00810C1B /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
 		84D2DE1C1A10EAFA00810C1B /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		84D2DE1D1A10EAFA00810C1B /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		84D2DE201A10EAFA00810C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -58,6 +57,9 @@
 		84D2DE411A11FA9C00810C1B /* GeoCodingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoCodingViewModel.m; sourceTree = "<group>"; };
 		84D2DE431A12064F00810C1B /* UISearchBar+RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+RAC.h"; sourceTree = "<group>"; };
 		84D2DE441A12064F00810C1B /* UISearchBar+RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+RAC.m"; sourceTree = "<group>"; };
+		84D2DE461A123E8200810C1B /* Waypoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Waypoint.h; sourceTree = "<group>"; };
+		84D2DE471A123E8200810C1B /* Waypoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Waypoint.m; sourceTree = "<group>"; };
+		84D2DE491A123EA600810C1B /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D2DE4A1A123EA600810C1B /* CoreLocation.framework in Frameworks */,
 				84D2DE3C1A10EEBB00810C1B /* MapKit.framework in Frameworks */,
 				40A2CC4D624FD040763B2A76 /* libPods.a in Frameworks */,
 			);
@@ -115,8 +118,6 @@
 			children = (
 				84D2DE161A10EAFA00810C1B /* AppDelegate.h */,
 				84D2DE171A10EAFA00810C1B /* AppDelegate.m */,
-				84D2DE191A10EAFA00810C1B /* MasterViewController.h */,
-				84D2DE1A1A10EAFA00810C1B /* MasterViewController.m */,
 				84D2DE1C1A10EAFA00810C1B /* DetailViewController.h */,
 				84D2DE1D1A10EAFA00810C1B /* DetailViewController.m */,
 				84D2DE1F1A10EAFA00810C1B /* Main.storyboard */,
@@ -129,6 +130,8 @@
 				84D2DE411A11FA9C00810C1B /* GeoCodingViewModel.m */,
 				84D2DE431A12064F00810C1B /* UISearchBar+RAC.h */,
 				84D2DE441A12064F00810C1B /* UISearchBar+RAC.m */,
+				84D2DE461A123E8200810C1B /* Waypoint.h */,
+				84D2DE471A123E8200810C1B /* Waypoint.m */,
 			);
 			path = RACDemo;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 		FD8F8A1FE1938F5A5328D7A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				84D2DE491A123EA600810C1B /* CoreLocation.framework */,
 				0D32D8795791739425F21357 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -302,9 +306,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D2DE481A123E8200810C1B /* Waypoint.m in Sources */,
 				84D2DE421A11FA9C00810C1B /* GeoCodingViewModel.m in Sources */,
 				84D2DE181A10EAFA00810C1B /* AppDelegate.m in Sources */,
-				84D2DE1B1A10EAFA00810C1B /* MasterViewController.m in Sources */,
 				84D2DE451A12064F00810C1B /* UISearchBar+RAC.m in Sources */,
 				84D2DE151A10EAFA00810C1B /* main.m in Sources */,
 				84D2DE1E1A10EAFA00810C1B /* DetailViewController.m in Sources */,

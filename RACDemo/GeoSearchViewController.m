@@ -11,6 +11,7 @@
 #import "UISearchBar+RAC.h"
 #import "ReactiveCocoa.h"
 #import "EXTScope.h"
+#import "Waypoint.h"
 
 @interface GeoSearchViewController ()
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
@@ -22,22 +23,16 @@
 
 @implementation GeoSearchViewController
 
-- (id)init {
-    self = [super init];
-    if (self) {
-        self.viewModel = [GeoCodingViewModel new];
-    }
-    return self;
-}
-
 -(void)awakeFromNib {
-    self.viewModel = [GeoCodingViewModel new];
+    [super awakeFromNib];
+    self.viewModel = [GeoCodingViewModel sharedViewModel];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.tableView.dataSource = self;
+    self.tableView.delegate = self;
     
     RAC(self.viewModel, searchText) = self.searchBar.rac_textSignal;
     
@@ -65,8 +60,15 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SearchResultCell"];
-    cell.textLabel.text = self.viewModel.lastResult[indexPath.row];
+    Waypoint* w = self.viewModel.lastResult[indexPath.row];
+    cell.textLabel.text = w.title;
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    NSLog(@"selectWaypoint.enabled %@", self.viewModel.selectWaypoint.enabled.first);
+    [self.viewModel.selectWaypoint execute:[NSNumber numberWithInt:indexPath.row]];
 }
 /*
 #pragma mark - Navigation
