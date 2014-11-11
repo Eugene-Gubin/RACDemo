@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GeoSearchViewController : UIViewController
+@interface GeoSearchViewController : UIViewController<UITableViewDataSource>
 
 @end

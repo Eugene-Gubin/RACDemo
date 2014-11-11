@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40A2CC4D624FD040763B2A76 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D32D8795791739425F21357 /* libPods.a */; };
 		84D2DE151A10EAFA00810C1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE141A10EAFA00810C1B /* main.m */; };
 		84D2DE181A10EAFA00810C1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE171A10EAFA00810C1B /* AppDelegate.m */; };
 		84D2DE1B1A10EAFA00810C1B /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE1A1A10EAFA00810C1B /* MasterViewController.m */; };
@@ -17,6 +18,8 @@
 		84D2DE321A10EAFB00810C1B /* RACDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE311A10EAFB00810C1B /* RACDemoTests.m */; };
 		84D2DE3C1A10EEBB00810C1B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84D2DE3B1A10EEBB00810C1B /* MapKit.framework */; };
 		84D2DE3F1A11031100810C1B /* GeoSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE3E1A11031100810C1B /* GeoSearchViewController.m */; };
+		84D2DE421A11FA9C00810C1B /* GeoCodingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE411A11FA9C00810C1B /* GeoCodingViewModel.m */; };
+		84D2DE451A12064F00810C1B /* UISearchBar+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 84D2DE441A12064F00810C1B /* UISearchBar+RAC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +33,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04140F8CF097984F61AD1A9E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		0D32D8795791739425F21357 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		39145B9BD7140FFF43009E91 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		84D2DE0F1A10EAFA00810C1B /* RACDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RACDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84D2DE131A10EAFA00810C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84D2DE141A10EAFA00810C1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,6 +54,10 @@
 		84D2DE3B1A10EEBB00810C1B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		84D2DE3D1A11031100810C1B /* GeoSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoSearchViewController.h; sourceTree = "<group>"; };
 		84D2DE3E1A11031100810C1B /* GeoSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoSearchViewController.m; sourceTree = "<group>"; };
+		84D2DE401A11FA9C00810C1B /* GeoCodingViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoCodingViewModel.h; sourceTree = "<group>"; };
+		84D2DE411A11FA9C00810C1B /* GeoCodingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoCodingViewModel.m; sourceTree = "<group>"; };
+		84D2DE431A12064F00810C1B /* UISearchBar+RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+RAC.h"; sourceTree = "<group>"; };
+		84D2DE441A12064F00810C1B /* UISearchBar+RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+RAC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84D2DE3C1A10EEBB00810C1B /* MapKit.framework in Frameworks */,
+				40A2CC4D624FD040763B2A76 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +80,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21DE0E15D58B72A853493B25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				39145B9BD7140FFF43009E91 /* Pods.debug.xcconfig */,
+				04140F8CF097984F61AD1A9E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		84D2DE061A10EAFA00810C1B = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +96,8 @@
 				84D2DE111A10EAFA00810C1B /* RACDemo */,
 				84D2DE2E1A10EAFB00810C1B /* RACDemoTests */,
 				84D2DE101A10EAFA00810C1B /* Products */,
+				21DE0E15D58B72A853493B25 /* Pods */,
+				FD8F8A1FE1938F5A5328D7A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +125,10 @@
 				84D2DE121A10EAFA00810C1B /* Supporting Files */,
 				84D2DE3D1A11031100810C1B /* GeoSearchViewController.h */,
 				84D2DE3E1A11031100810C1B /* GeoSearchViewController.m */,
+				84D2DE401A11FA9C00810C1B /* GeoCodingViewModel.h */,
+				84D2DE411A11FA9C00810C1B /* GeoCodingViewModel.m */,
+				84D2DE431A12064F00810C1B /* UISearchBar+RAC.h */,
+				84D2DE441A12064F00810C1B /* UISearchBar+RAC.m */,
 			);
 			path = RACDemo;
 			sourceTree = "<group>";
@@ -133,6 +159,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		FD8F8A1FE1938F5A5328D7A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D32D8795791739425F21357 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -140,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84D2DE351A10EAFB00810C1B /* Build configuration list for PBXNativeTarget "RACDemo" */;
 			buildPhases = (
+				A1E9308AE05795A3D4B2F2AB /* Check Pods Manifest.lock */,
 				84D2DE0B1A10EAFA00810C1B /* Sources */,
 				84D2DE0C1A10EAFA00810C1B /* Frameworks */,
 				84D2DE0D1A10EAFA00810C1B /* Resources */,
+				F3BD8CD5C8DE6DDB59AC014A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -228,13 +264,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A1E9308AE05795A3D4B2F2AB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F3BD8CD5C8DE6DDB59AC014A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84D2DE0B1A10EAFA00810C1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84D2DE421A11FA9C00810C1B /* GeoCodingViewModel.m in Sources */,
 				84D2DE181A10EAFA00810C1B /* AppDelegate.m in Sources */,
 				84D2DE1B1A10EAFA00810C1B /* MasterViewController.m in Sources */,
+				84D2DE451A12064F00810C1B /* UISearchBar+RAC.m in Sources */,
 				84D2DE151A10EAFA00810C1B /* main.m in Sources */,
 				84D2DE1E1A10EAFA00810C1B /* DetailViewController.m in Sources */,
 				84D2DE3F1A11031100810C1B /* GeoSearchViewController.m in Sources */,
@@ -359,6 +430,7 @@
 		};
 		84D2DE361A10EAFB00810C1B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 39145B9BD7140FFF43009E91 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RACDemo/Info.plist;
@@ -369,6 +441,7 @@
 		};
 		84D2DE371A10EAFB00810C1B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04140F8CF097984F61AD1A9E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RACDemo/Info.plist;
@@ -430,6 +503,7 @@
 				84D2DE371A10EAFB00810C1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84D2DE381A10EAFB00810C1B /* Build configuration list for PBXNativeTarget "RACDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +512,7 @@
 				84D2DE3A1A10EAFB00810C1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
